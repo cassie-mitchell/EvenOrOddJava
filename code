@@ -1,0 +1,25 @@
+import java.util.Scanner;
+//import scanner class so we can get user input
+
+class CheckEvenOdd
+{
+  public static void main(String args[])
+  //main method
+  {
+    int num;
+    //declare a variable of type int
+    System.out.println("Enter an Integer number:");
+    //print a message to console for user
+
+    Scanner input = new Scanner(System.in);
+    //create a scanner
+    num = input.nextInt();
+    //scan user input and store in our variable
+
+    if ( num % 2 == 0 )
+        System.out.println("Entered number is even");
+        //if the remainder of division by two is zero print a message to thr user it is even
+      else
+        System.out.println("Entered number is odd");
+  }
+}
